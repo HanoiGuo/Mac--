@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4504F611C422D9500882B38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4504F601C422D9500882B38 /* AppDelegate.m */; };
+		B4504F611C422D9500882B38 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4504F601C422D9500882B38 /* AppDelegate.mm */; };
 		B4504F631C422D9500882B38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4504F621C422D9500882B38 /* main.m */; };
 		B4504F651C422D9500882B38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4504F641C422D9500882B38 /* Images.xcassets */; };
 		B4504F681C422D9500882B38 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4504F661C422D9500882B38 /* MainMenu.xib */; };
@@ -28,13 +28,14 @@
 		B4504F5A1C422D9500882B38 /* 博杰获取设备名.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "博杰获取设备名.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4504F5E1C422D9500882B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4504F5F1C422D9500882B38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B4504F601C422D9500882B38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B4504F601C422D9500882B38 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		B4504F621C422D9500882B38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4504F641C422D9500882B38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B4504F671C422D9500882B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B4504F6D1C422D9500882B38 /* 博杰获取设备名Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "博杰获取设备名Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4504F721C422D9500882B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4504F731C422D9500882B38 /* _______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______Tests.m"; sourceTree = "<group>"; };
+		B4504F7D1C42332500882B38 /* Tony.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tony.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				B4504F5F1C422D9500882B38 /* AppDelegate.h */,
-				B4504F601C422D9500882B38 /* AppDelegate.m */,
+				B4504F601C422D9500882B38 /* AppDelegate.mm */,
 				B4504F641C422D9500882B38 /* Images.xcassets */,
 				B4504F661C422D9500882B38 /* MainMenu.xib */,
 				B4504F5D1C422D9500882B38 /* Supporting Files */,
+				B4504F7D1C42332500882B38 /* Tony.h */,
 			);
 			path = "博杰获取设备名";
 			sourceTree = "<group>";
@@ -211,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4504F631C422D9500882B38 /* main.m in Sources */,
-				B4504F611C422D9500882B38 /* AppDelegate.m in Sources */,
+				B4504F611C422D9500882B38 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -318,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -332,6 +334,7 @@
 				INFOPLIST_FILE = "博杰获取设备名/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 			};
 			name = Debug;
 		};
@@ -343,6 +346,7 @@
 				INFOPLIST_FILE = "博杰获取设备名/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 			};
 			name = Release;
 		};
@@ -401,6 +405,7 @@
 				B4504F791C422D9500882B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4504F7A1C422D9500882B38 /* Build configuration list for PBXNativeTarget "博杰获取设备名Tests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +414,7 @@
 				B4504F7C1C422D9500882B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
