@@ -778,14 +778,6 @@
                             <action selector="m_Exit:" target="Voe-Tx-rLC" id="fGz-wL-qAY"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0OW-Nr-HCz">
-                        <rect key="frame" x="-8" y="0.0" width="562" height="30"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="开发人:郭锐    代码地址:/Project/Tony/博杰获取设备名" drawsBackground="YES" id="bFi-S8-EPk">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" red="0.59260931969999997" green="0.56439424999999999" blue="0.96166745580000002" alpha="1" colorSpace="calibratedRGB"/>
-                        </textFieldCell>
-                    </textField>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5MV-NB-j4o">
                         <rect key="frame" x="294" y="335" width="61" height="18"/>
                         <buttonCell key="cell" type="check" title="修改" bezelStyle="regularSquare" imagePosition="left" inset="2" id="jgy-3x-I6O">
@@ -812,6 +804,14 @@
                             </connections>
                         </comboBoxCell>
                     </comboBox>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0OW-Nr-HCz">
+                        <rect key="frame" x="-8" y="0.0" width="562" height="30"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="开发人:郭锐    代码地址:https://github.com/HanoiGuo/Mac--" drawsBackground="YES" id="bFi-S8-EPk">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="0.59260931969999997" green="0.56439424999999999" blue="0.96166745580000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
             <point key="canvasLocation" x="316" y="400.5"/>

@@ -119,6 +119,7 @@ bool CheckSoftwareVersion(const char *pPath,const char *version,int len)
     }
     if(trynumber >= 10)
     {
+        close(fd);
         return false;
     }
     usleep(500000);
@@ -139,6 +140,7 @@ bool CheckSoftwareVersion(const char *pPath,const char *version,int len)
     }
     if(trynumber >= 10)
     {
+        close(fd);
         return false;
     }
     
@@ -151,7 +153,8 @@ bool CheckSoftwareVersion(const char *pPath,const char *version,int len)
     //开始对比数据
     if(tempVersion == temp)
     {
-         return true;
+        close(fd);
+        return true;
     }
     close(fd);
     return false;
@@ -171,7 +174,8 @@ std::string& trim(std::string &s)
 
 bool GetProduceName(vector<string>&productname)
 {
-    fstream readFile("/usr/博杰自动扫描设备名/product.txt",ios::in);
+    fstream readFile("/Users/visitor/博杰自动扫描设备名/product.txt",ios::in);
+    //fstream readFile("/usr/博杰自动扫描设备名/product.txt",ios::in);
     string temp;
     int nIndex = 0;
     string keywords;
@@ -183,7 +187,7 @@ bool GetProduceName(vector<string>&productname)
             if(nIndex < 0)
             {
                 continue;
-            }
+            }  
             //keywords = temp.substr(nIndex+1,temp.length());
             keywords = trim(temp);
             productname.push_back(keywords);
